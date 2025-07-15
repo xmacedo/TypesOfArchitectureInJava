@@ -20,4 +20,19 @@
 ### Sample Use Case: Banking Microservice for Account Transfer
 > Let’s build a minimal example using this architecture. But before that lets take few minutes halt at this line and think how would you do that, not a detailed one, just an outline so that you can compare it with the rest of the write-up.
 
-[Example]()
+[Example](src/main/java/br/com/xmacedo/typesofarchitectureinjava/hexagonal/HexagonalArchitectureApplication.java)
+
+---
+
+## 2. Layered Architecture
+
+### What is it?
+> Layered Architecture is probably the most traditional pattern you’ve seen. It breaks your application into horizontal layers — each with a specific responsibility:
+
+- Presentation Layer (UI)
+- Business Layer (Service/Logic)
+- Persistence Layer (Repositories/DAOs)
+- Database Layer
+
+> These layers talk to each other in one direction: from top to bottom.
+
