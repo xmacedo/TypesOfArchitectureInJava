@@ -20,6 +20,12 @@
 ### Sample Use Case: Banking Microservice for Account Transfer
 > Let’s build a minimal example using this architecture. But before that lets take few minutes halt at this line and think how would you do that, not a detailed one, just an outline so that you can compare it with the rest of the write-up.
 
+### Benefits of Hexagonal Architecture
+1. Core logic is decoupled from framework-specific code.
+2. Easy to test the application by mocking ports.
+3. Flexible to swap technologies (e.g., move from JPA to MongoDB).
+4. Improves readability by making dependencies explicit.
+
 [Example](src/main/java/br/com/xmacedo/typesofarchitectureinjava/hexagonal/HexagonalArchitectureApplication.java)
 
 ---
@@ -35,4 +41,5 @@
 - Database Layer
 
 > These layers talk to each other in one direction: from top to bottom.
+[Example](src/main/java/br/com/xmacedo/typesofarchitectureinjava/layered/LayeredArchitectureApplication.java)
 
