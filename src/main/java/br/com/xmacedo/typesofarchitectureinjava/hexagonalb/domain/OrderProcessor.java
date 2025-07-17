@@ -1,4 +1,5 @@
 package br.com.xmacedo.typesofarchitectureinjava.hexagonalb.domain;
 
-public class OrderProcessor {
+public interface OrderProcessor {
+    void process(Order order);
 }
